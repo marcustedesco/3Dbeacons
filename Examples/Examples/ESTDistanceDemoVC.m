@@ -82,6 +82,7 @@
     ESTBeacon *firstBeacon = [beacons firstObject];
     
     [self updateDotPositionForDistance:[firstBeacon.distance floatValue]];
+    
 }
 
 #pragma mark -

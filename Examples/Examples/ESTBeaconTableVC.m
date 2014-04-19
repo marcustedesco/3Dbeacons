@@ -132,7 +132,7 @@
     
     cell.textLabel.text = [NSString stringWithFormat:@"Major: %@, Minor: %@", beacon.major, beacon.minor];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"Distance: %.2f", [beacon.distance floatValue]];
-    
+    [self distanceCalculator:indexPath];
     return cell;
 }
 
@@ -146,6 +146,19 @@
     
         self.completionHandler(selectedBeacon);
     }];
+}
+
+- (void) distanceCalculator:(NSIndexPath *)indexPath
+{
+    NSLog(@"Test");
+    /*NSInteger totalDistance = [[NSInteger alloc] init];
+    for (ESTBeacon in beaconsArray) {
+        totalDistance += distance;
+    }
+    ESTTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellIdentifier" forIndexPath:indexPath];
+    cell.textLabel.text = [NSString stringWithFormat:@"Distance: %.2f", [totalDistance floatValue]];
+    
+    return cell;*/
 }
 
 @end
