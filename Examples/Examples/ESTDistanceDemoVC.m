@@ -46,7 +46,7 @@
      */
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIImageView *beaconImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"beacon"]];
+    UIImageView *beaconImageView = [[UIImageView alloc] init];//initWithImage:[UIImage imageNamed:@"beacon"]];
     [beaconImageView setCenter:CGPointMake(self.view.center.x, 100)];
     [self.view addSubview:beaconImageView];
     
