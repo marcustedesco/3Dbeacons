@@ -150,12 +150,14 @@
 
 - (void) distanceCalculator:(NSIndexPath *)indexPath
 {
-    NSLog(@"Test");
-    /*NSInteger totalDistance = [[NSInteger alloc] init];
-    for (ESTBeacon in beaconsArray) {
-        totalDistance += distance;
+    //NSLog(@"Test");
+    float totalDistance;
+    for (ESTBeacon *beacon in self.beaconsArray) {
+        totalDistance += [beacon.distance floatValue];
     }
-    ESTTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellIdentifier" forIndexPath:indexPath];
+    NSLog(@"Distance: %.2f", totalDistance);
+    
+    /*ESTTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellIdentifier" forIndexPath:indexPath];
     cell.textLabel.text = [NSString stringWithFormat:@"Distance: %.2f", [totalDistance floatValue]];
     
     return cell;*/
