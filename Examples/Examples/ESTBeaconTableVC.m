@@ -133,6 +133,14 @@
     cell.textLabel.text = [NSString stringWithFormat:@"Major: %@, Minor: %@", beacon.major, beacon.minor];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"Distance: %.2f", [beacon.distance floatValue]];
     [self distanceCalculator:indexPath];
+    if (sizeof(self.beaconsArray) > 0) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Welcome to McDonalds"
+                                                        message:@"Enjoy this 10% off coupon on all burgers."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"Thanks"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
     return cell;
 }
 
@@ -154,6 +162,7 @@
     float totalDistance;
     for (ESTBeacon *beacon in self.beaconsArray) {
         totalDistance += [beacon.distance floatValue];
+
     }
     NSLog(@"Distance: %.2f", totalDistance);
     
