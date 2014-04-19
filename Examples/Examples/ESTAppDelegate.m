@@ -7,12 +7,14 @@
 //
 
 #import "ESTAppDelegate.h"
+#import "MTBeaconStore.h"
 
 @implementation ESTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.beaconStore = [[MTBeaconStore alloc] init];
     return YES;
 }
 							

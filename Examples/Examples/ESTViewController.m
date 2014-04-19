@@ -11,6 +11,7 @@
 #import "ESTDistanceDemoVC.h"
 #import "ESTProximityDemoVC.h"
 #import "ESTNotificationDemoVC.h"
+#import "PositionViewController.h"
 
 @implementation ESTViewController
 
@@ -25,8 +26,10 @@
 {
     ESTBeaconTableVC *beaconTableVC = [[ESTBeaconTableVC alloc] initWithCompletionHandler:^(ESTBeacon *beacon) {
         
-        ESTDistanceDemoVC *distanceDemoVC = [[ESTDistanceDemoVC alloc] initWithBeacon:beacon];
-        [self.navigationController pushViewController:distanceDemoVC animated:YES];
+        //ESTDistanceDemoVC *distanceDemoVC = [[ESTDistanceDemoVC alloc] initWithBeacon:beacon];
+        //[self.navigationController pushViewController:distanceDemoVC animated:YES];
+        PositionViewController *posControl  = [[PositionViewController alloc] init];
+        [self.navigationController pushViewController:posControl animated:YES];
     }];
     
     [self presentViewController:[[UINavigationController alloc] initWithRootViewController: beaconTableVC]

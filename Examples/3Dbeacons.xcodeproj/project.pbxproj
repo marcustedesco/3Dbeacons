@@ -30,6 +30,7 @@
 		E221A7D71902F196000798F9 /* MTBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = E221A7D61902F196000798F9 /* MTBeacon.m */; };
 		E221A7DB19030236000798F9 /* PositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E221A7D919030236000798F9 /* PositionViewController.m */; };
 		E221A7DC19030236000798F9 /* PositionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E221A7DA19030236000798F9 /* PositionViewController.xib */; };
+		E221A7DF19030B7B000798F9 /* MTBeaconStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E221A7DE19030B7B000798F9 /* MTBeaconStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		E221A7D819030236000798F9 /* PositionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PositionViewController.h; path = ../PositionViewController.h; sourceTree = "<group>"; };
 		E221A7D919030236000798F9 /* PositionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PositionViewController.m; path = ../PositionViewController.m; sourceTree = "<group>"; };
 		E221A7DA19030236000798F9 /* PositionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PositionViewController.xib; path = ../PositionViewController.xib; sourceTree = "<group>"; };
+		E221A7DD19030B7B000798F9 /* MTBeaconStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTBeaconStore.h; sourceTree = "<group>"; };
+		E221A7DE19030B7B000798F9 /* MTBeaconStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTBeaconStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 			children = (
 				AC39C3CC18D72A6F00B38212 /* ESTAppDelegate.h */,
 				AC39C3CD18D72A6F00B38212 /* ESTAppDelegate.m */,
+				E221A7DD19030B7B000798F9 /* MTBeaconStore.h */,
+				E221A7DE19030B7B000798F9 /* MTBeaconStore.m */,
 				AC39C3CF18D72A6F00B38212 /* Main.storyboard */,
 				AC39C3D318D72A6F00B38212 /* ESTViewController.m */,
 				AC39C3F218D72BA700B38212 /* ESTBeaconTableVC.h */,
@@ -286,6 +291,7 @@
 				AC39C3D418D72A6F00B38212 /* ESTViewController.m in Sources */,
 				AC39C3FB18D7346C00B38212 /* ESTProximityDemoVC.m in Sources */,
 				AC39C3FE18D73DCB00B38212 /* ESTDistanceDemoVC.m in Sources */,
+				E221A7DF19030B7B000798F9 /* MTBeaconStore.m in Sources */,
 				AC39C3F418D72BA700B38212 /* ESTBeaconTableVC.m in Sources */,
 				AC39C40118D8564100B38212 /* ESTNotificationDemoVC.m in Sources */,
 				E221A7D71902F196000798F9 /* MTBeacon.m in Sources */,

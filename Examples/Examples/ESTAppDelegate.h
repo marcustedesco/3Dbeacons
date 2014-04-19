@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class MTBeaconStore;
 
 @interface ESTAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) MTBeaconStore *beaconStore;
 
 @end
