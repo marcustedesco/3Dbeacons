@@ -30,6 +30,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *blackDot;
 @property (weak, nonatomic) IBOutlet UILabel *xval;
 @property (weak, nonatomic) IBOutlet UILabel *yval;
+@property (weak, nonatomic) IBOutlet UILabel *purpleDis;
+@property (weak, nonatomic) IBOutlet UILabel *greenDis;
+@property (weak, nonatomic) IBOutlet UILabel *blueDis;
 
 @end
 
@@ -129,38 +132,10 @@
     [self.blackDot setCenter:CGPointMake(pos.x*stepW, TOP_MARGIN+pos.y*stepH)];
     [self.xval setText:[NSString stringWithFormat:@"%.2f", pos.x]];
     [self.yval setText:[NSString stringWithFormat:@"%.2f", pos.y]];
+    
+    [self.purpleDis setText:[NSString stringWithFormat:@"%.2f", [beaconStore.purpleBeacon.beac.distance floatValue]]];
+    [self.greenDis setText:[NSString stringWithFormat:@"%.2f", [beaconStore.greenBeacon.beac.distance floatValue]]];
+    [self.blueDis setText:[NSString stringWithFormat:@"%.2f", [beaconStore.blueBeacon.beac.distance floatValue]]];
 }
-
-/*
- 
- @interface PositionViewController ()
- 
- @property (weak, nonatomic) IBOutlet UIImageView *blackDot;
- @end
- 
- @implementation PositionViewController
- 
- - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
- {
- self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
- if (self) {
- // Custom initialization
- }
- return self;
- }
- 
- - (void)viewDidLoad
- {
- [super viewDidLoad];
- // Do any additional setup after loading the view from its nib.
- }
- 
- - (void)didReceiveMemoryWarning
- {
- [super didReceiveMemoryWarning];
- // Dispose of any resources that can be recreated.
- }
- 
- */
 
 @end
